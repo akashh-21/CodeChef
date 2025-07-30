@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeChef Dashboard</title>
+    <link rel="stylesheet" href="gpt.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left">
+            <div class="header-logo">
+                <img src="https://cdn.codechef.com/images/cc-logo.svg" alt="CodeChef Logo">
+            </div>
+            <nav class="header-nav">
+                <a href="#">Courses</a>
+                <a href="#">Practice</a>
+                <a href="#">Compete</a>
+                <a href="#">Compiler</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            <a href="#" class="upgrade-button">
+                <span class="icon">⭐</span> Upgrade To Pro
+            </a>
+            <button id="theme-toggle" class="theme-toggle">
+                ☀ </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="left-panel">
+            <div class="card greeting-card">
+                <h2 id="greeting"></h2>
+                <p id="sub-message">Welcome back to CodeChef, continue your journey</p>
+            </div>
+
+            <div class="card">
+                <div class="section-header">
+                    <span class="icon">🚀</span>
+                    <h3>Recently Launched</h3>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <img src="https://cdn.codechef.com/images/self-learning/icons/django.svg" alt="Django Logo">
+                    </div>
+                    <div class="module-details">
+                        <h4>Learn Django</h4>
+                        <p>Learn Django from scratch and build modern web applications. Perfect for beginners and
+                            intermediate developers.</p>
+                    </div>
+                    <button class="start-button">Start</button>
+                </div>
+            </div>
+
+            <div class="card roadmap-card">
+                <div class="section-header">
+                    <span class="icon">📖</span>
+                    <h3>Continue your Roadmaps</h3>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+                            alt="C++ Logo">
+                    </div>
+                    <div class="module-details">
+                        <h4>C++ with Beginner DSA</h4>
+                        <div class="roadmap-progress">
+                            <span>15% Completed</span>
+                            <div class="roadmap-progress-bar">
+                                <div class="roadmap-progress-fill" style="width: 15%;"></div>
+                            </div>
+                        </div>
+                        <div class="roadmap-details">
+                            <div class="roadmap-detail-item">
+                                <span class="icon">📚</span> 6 courses
+                            </div>
+                            <div class="roadmap-detail-item">
+                                <span class="icon">⏰</span> 6 months
+                            </div>
+                            <div class="roadmap-detail-item">
+                                <span class="icon">✍</span> 711 Problems
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon" style="background-color: #333;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+                            alt="C++ Logo">
+                    </div>
+                    <div class="module-details">
+                        <h4>Learn C++</h4>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill-small" style="width: 70%;"></div>
+                        </div>
+                        <p class="current-module">Current Module: Introducing printing - cout</p>
+                    </div>
+                    <button class="resume-button">Resume</button>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon" style="background-color: #333;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+                            alt="C++ Logo">
+                    </div>
+                    <div class="module-details">
+                        <h4>Practice C++</h4>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill-small" style="width: 80%;"></div>
+                        </div>
+                        <p class="current-module">Current Module: Output / Printing in Cpp</p>
+                    </div>
+                    <button class="resume-button">Resume</button>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon" style="background-color: #333;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+                            alt="C++ Logo">
+                    </div>
+                    <div class="module-details">
+                        <h4>C++ Problem Solving</h4>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill-small" style="width: 40%;"></div>
+                        </div>
+                        <p class="current-module">Current Module: Addition and multiplication</p>
+                    </div>
+                    <button class="resume-button">Resume</button>
+                </div>
+
+                <p style="font-size: 14px; text-align: right; color: var(--light-text-color);">3 courses more in the
+                    roadmap</p>
+                <button class="view-roadmap-button" style="display: block; margin: 0 auto 10px auto;">View
+                    Roadmap</button>
+            </div>
+
+            <div class="card">
+                <div class="section-header">
+                    <span class="icon">📚</span>
+                    <h3>Continue your Learning</h3>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon" style="background-color: #2d618d;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sql_data_base_with_logo.png/640px-Sql_data_base_with_logo.png"
+                            alt="SQL Logo">
+                    </div>
+                    <div class="module-details">
+                        <h4>SQL Practice Queries</h4>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill-small" style="width: 11%;"></div>
+                        </div>
+                        <p class="current-module">Current Module: Practice Basic Commands</p>
+                    </div>
+                    <button class="continue-button">Continue</button>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon" style="background-color: #385d8a;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                            alt="Python Logo">
+                    </div>
+                    <div class="module-details">
+                        <h4>Learn Python Programming</h4>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill-small" style="width: 7%;"></div>
+                        </div>
+                        <p class="current-module">Current Module: Introduction to variables and datatypes</p>
+                    </div>
+                    <button class="continue-button">Continue</button>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon" style="background-color: #314a80;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+                            alt="C Logo">
+                    </div>
+                    <div class="module-details">
+                        <h4>Problem solving in C</h4>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill-small" style="width: 16%;"></div>
+                        </div>
+                        <p class="current-module">Current Module: Practice</p>
+                    </div>
+                    <button class="continue-button">Continue</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="card streak-card">
+                <div class="flame-icon">🔥</div>
+                <div class="streak-count">0/5 days</div>
+                <p class="streak-message">Start your coding streak, ignite the kitchen flame!</p>
+                <div class="streak-progress-icons">
+                    <span class="icon-item active">💎</span> <span class="icon-item">💎</span>
+                    <span class="icon-item">💎</span>
+                    <span class="icon-item">💎</span>
+                    <span class="icon-item">💎</span>
+                </div>
+                <div class="streak-calendar">
+                    <div class="day-header">M</div>
+                    <div class="day-header">T</div>
+                    <div class="day-header">W</div>
+                    <div class="day-header">T</div>
+                    <div class="day-header">F</div>
+                    <div class="day-header">S</div>
+                    <div class="day-header">S</div>
+                    <div class="day-cell">14</div>
+                    <div class="day-cell">15</div>
+                    <div class="day-cell filled">16</div>
+                    <div class="day-cell filled">17</div>
+                    <div class="day-cell filled">18</div>
+                    <div class="day-cell filled">19</div>
+                    <div class="day-cell current">20</div>
+                </div>
+                <button class="streak-info-button">What is a streak flame?</button>
+            </div>
+
+            <div class="mobile-verify-card">
+                <span class="icon">✅</span>
+                <div class="details">
+                    <p>Is your mobile verified?</p>
+                    <small>Don't miss exciting rewards and new learning updates!</small>
+                </div>
+                <button class="verify-button">Verify now</button>
+            </div>
+
+            <div class="card rookie-league-card">
+                <div class="badge-icon">
+                    Level 1
+                </div>
+                <h3>Rookie League</h3>
+                <p>Try to stay at the top 10 of your leaderboard to Level up!</p>
+                <div class="your-rank-section">
+                    <span>Your Rank: <span class="highlight">16</span> | Earned XP: <span class="highlight">50</span> |
+                        Days left: <span class="highlight">1</span></span>
+                </div>
+                <table class="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Username</th>
+                            <th>XP earned</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Kanuganti Aakash</td>
+                            <td>205</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Nawaz</td>
+                            <td>165</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Mythili</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Prakash</td>
+                            <td>135</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Navaneetha</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Mansi</td>
+                            <td>110</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Dhviya</td>
+                            <td>100</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+        const body = document.body;
+        themeToggle.addEventListener("click", () => {
+            body.classList.toggle("light-theme");
+            themeToggle.textContent = body.classList.contains("light-theme") ? "🌙" : "☀";
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const greetingElement = document.getElementById("greeting");
+            const subMessage = document.getElementById("sub-message");
+            const now = new Date();
+            const hours = now.getHours();
+            let greeting = "Hello";
+
+            if (hours >= 5 && hours < 12) {
+                greeting = "Good Morning";
+                subMessage.textContent = "Start your day with a new challenge ☕";
+            } else if (hours >= 12 && hours < 17) {
+                greeting = "Good Afternoon";
+                subMessage.textContent = "Keep the momentum going 💪";
+            } else if (hours >= 17 && hours < 21) {
+                greeting = "Good Evening";
+                subMessage.textContent = "Great time to practice and reflect 🌆";
+            } else {
+                greeting = "Good Night";
+                subMessage.textContent = "Wind down with some light learning 🌙";
+            }
+
+            greetingElement.textContent = `${greeting} Kanuganti Aakash`;
+        });
+    </script>
+
+    <!-- <script>
+        const themetoggle = document.getElementById("theme-toggle");
+        const body = document.body;
+        themetoggle.addEventListener("click", () => {
+            body.classList.toggle("light-theme");
+            themeToggle.textContent = body.classList.contains("light-theme") ? "Light" : "Dark";
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const greetingElement = document.getElementById("greeting");
+            const submessage = document.getElementById("sub-message");
+            const now = new Date();
+            const hours = now.getHours();
+            let greeting = "Hello";
+            if (hour >= 5 && hour < 12) {
+                greeting = "Good Morning";
+            } else if (hour >= 12 && hour < 17) {
+                greeting = "Good Afternoon";
+            } else if (hour >= 17 && hour < 21) {
+                greeting = "Good Evening";
+            } else {
+                greeting = "Good Night";
+            }
+            greetingElement.textContent = `${greeting} Kanuganti Aakash`;
+            // Optional sub-message changes based on time
+            if (hour >= 5 && hour < 12) {
+                subMessage.textContent = "Start your day with a new challenge ☕";
+            } else if (hour >= 12 && hour < 17) {
+                subMessage.textContent = "Keep the momentum going 💪";
+            } else if (hour >= 17 && hour < 21) {
+                subMessage.textContent = "Great time to practice and reflect 🌆";
+            } else {
+                subMessage.textContent = "Wind down with some light learning 🌙";
+            }
+        });
+    </script> -->
+</body>
+
+</html>

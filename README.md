@@ -11,7 +11,7 @@ This project replicates the look and feel of the CodeChef dashboard with feature
 ---
 
 ## 📸 Preview  
-![CodeChef Dashboard ](https://codechefdashboard.onrender.com/)  
+![CodeChef Dashboard ](https://codechefdashboard.onrender.com)  
 ---
 
 ## ✨ Features  
